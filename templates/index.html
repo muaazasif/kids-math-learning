@@ -1,1 +1,3 @@
-<!doctype html><html><head><link rel='stylesheet' href='/static/css/style.css'></head><body><h1>Kids Math Learning</h1><p>2+3=?</p><input id=a><button onclick="c()">Check</button><p id=r></p><script src='/static/js/app.js'></script></body></html>
+<!doctype html><html><body><h2>Kids Math</h2><p>2+3=?</p><input id=a><button onclick='s()'>Submit</button><p id=r></p><a href='/download'>Download Excel</a><script>
+async function s(){let v=document.getElementById('a').value;let x=await fetch('/save',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({answer:v})});let j=await x.json();document.getElementById('r').innerText='AI Marks: '+j.marks;}
+</script></body></html>

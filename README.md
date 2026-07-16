@@ -1,1 +1,2 @@
-# kids-math-learning
+# Kids Math Learning
+Simple starter project.

@@ -1,0 +1,1 @@
+function c(){document.getElementById('r').innerText=(+a.value===5)?'Correct!':'Try Again';}
